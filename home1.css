@@ -1,0 +1,1018 @@
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+:root {
+  --boop-color: #70CBFA;
+  --booper-color: #FF7BA5;
+  --body-text-color: #4A4A4A;
+}
+
+.booper-color {
+  color: var(--booper-color);
+}
+
+p {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: regular;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+
+h1 {
+  color: var(--boop-color);
+  font-size: 36px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+h2 {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: Bold;
+  margin-top: 0px;
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+
+b {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+
+a:link { /* - a normal, unvisited link */
+  text-decoration: none;
+  }
+
+.master-container {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto, auto);
+  width: 100%;
+}
+
+.master-container > .header {
+  display: grid;
+  text-align: center;
+}
+
+.master-container > .sections {
+  display: grid;
+  grid-row-gap: 160px;
+}
+
+/*.sections > div {
+  background-color: lightgreen; /* TEMPORARY TO HELP SEE SIZE BETTER */
+
+
+.sections > .introduction-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .introduction-sections > .introduction-section {
+  display: grid;
+}
+.sections > .services-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .services-sections > .services-section-components {
+  display: grid;
+    grid-row-gap: 80px;
+}
+.sections > .recruitment-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
+.sections > .scrollguide-sections > .scrollguide-section {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
+.sections > .recruitment-sections > .recruitment-section-components{
+  display: grid;
+  grid-row-gap: 80px;
+  margin-bottom: 80px;
+}
+
+.sections > .alliances-sections {
+  display: grid;
+  grid-row-gap: 40px;
+}
+
+.sections > .members-sections > .member-section {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
+.sections > .members-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
+.master-container > .footer {
+  display: grid;
+}
+
+.twelve-column-grid { /* makes something have a 12 column grid */
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.twelve-column-grid-overlay {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  max-width: 1200px;
+}
+
+
+
+.header {
+  align: center;
+  grid-column: span 12;
+}
+
+.header-text {
+  color: var(--boop-color);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+.super-grid {
+  display: grid;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.overlay-checkbox {
+  display: none;
+}
+
+input:checked + .overlay-container > .twelve-column-grid-overlay {
+  display: grid;
+}
+
+.nav-bar > button {
+  color: var(--boop-color);
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  font-weight: bold;
+  border: 0px transparent;
+  margin-left:30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: white;
+}
+
+a:-webkit-any-link {
+    color: var(--boop-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #5DBBEC;
+}
+
+.landing-background {
+  background-color: #F4F7F8;
+  height: 400px;
+  background-repeat: repeat;
+  background-image: url("https://image.ibb.co/frFboS/Boop_and_Booper_Pattern_small.png");
+  margin-top: 160px;
+  margin-bottom: 160px;
+}
+
+.floating-strawberries {
+  position: relative;
+}
+
+.floating-strawberries-container {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -55px;
+  width: 100%;
+}
+
+.floating-strawberries-container img.left {
+  margin-right: 25px;
+  height: 140px;
+}
+
+.floating-strawberries-container img.right {
+  transform: scaleX(-1);
+  height: 120px;
+}
+
+.nav-bubble {
+  grid-column: span 12;
+  border-radius: 100px;
+  background-color: white;
+  box-shadow: 0 6px 10px 0 rgba(215,215,215,0.5);
+  font-family: 'Source Sans Pro';
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto auto;
+  line-height: 136px;
+  color: var(--boop-color);
+  margin-top: 90px !important;
+}
+
+.nav-bubble-text {
+  margin: 8px 60px;
+}
+
+.nav-bubble span {
+  color: var(--booper-color);
+}
+
+.nav-bubble .grey-text {
+  color: lightgrey;
+}
+
+.home-page-components {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-row-gap: 160px;
+  width: 100%
+}
+
+
+.new-section-intro {
+  grid-column: 3/span 8;
+}
+
+.new-section-intro,
+.new-section-intro p {
+  text-align: center;
+}
+
+.introduction {
+  grid-column: span 12;
+}
+
+.about-us-image, .our-mission-image {
+  background-size: auto 100%;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  height: 473px;
+}
+
+.about-us-image {
+  grid-column: span 6;
+  background-image: url("./amoria-wide.gif");
+}
+
+.our-mission-image {
+  grid-column: 7/13;
+  background-image: url("./zakum-bossing.gif");
+}
+
+.about-us-text {
+  grid-column: 8/13;
+  text-align: left;
+  align-self: center;
+}
+
+.our-mission-text {
+  grid-column: 1/6;
+  text-align: left;
+  align-self: center;
+  grid-row: 1;
+}
+
+.bossing-section {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 55px;
+}
+
+.bossing-gif {
+  align-self: start;
+  justify-self: end;
+  width: auto;
+  height: 200px;
+  margin-right: 0px;
+}
+
+.bossing-gif img {
+  max-height: 200px;
+  max-width: 300px;
+  transform: scaleX(-1);
+}
+
+.bossing-gif.scarlion img {
+  transform: scale(1.4);
+  height: 150px;
+}
+
+.bossing-gif.horntail img {
+  transform: scale(1.3);
+  margin-left: 50px;
+}
+
+.bossing-prices {
+  text-align: left;
+}
+
+.bossing-prices h1 {
+  color: #4a4a4a;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.prices {
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  width: 320px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #FF7BA5;
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 13px;
+}
+
+.specific-prices {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 8px;
+}
+
+.specific-prices p {
+  font-size: 20px;
+}
+
+.bossing-prices p {
+  font-size: 20px
+}
+
+.bossing-prices b {
+  font-size: 20px;
+}
+
+.berry-icon {
+  grid-column: 2/3;
+}
+
+
+.booper .title-and-subtitle h3 {
+  color: var(--booper-color);
+  text-align: left;
+}
+
+.guilds h3 {
+  color: var(--boop-color);
+  text-align: left;
+}
+
+.recruitment-text {
+  grid-column: 3/12;
+}
+
+.guilds {
+  grid-column: 1/13;
+}
+
+.guilds.twelve-column-grid {
+  grid-auto-rows: minmax(10px, auto);
+}
+
+.requirements-text-styling {
+  font-size: 12px;
+}
+
+.requirements-container {
+  flex: initial;
+}
+
+.line-container {
+  flex: auto;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #D8D8D8;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.requirements-line {
+  display: flex ;
+  grid-column: 3/12;
+  height: 30px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+.requirements-boxes-container {
+  grid-column: 3/span 9;
+  grid-template-columns: repeat(9,1fr);
+  display: grid;
+}
+
+.requirements-boxes {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  grid-column: span 3;
+}
+
+.bullet-point {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex: none;
+  margin-top: 2px;
+}
+
+.booper .bullet-point {
+  background-color: var(--booper-color);
+}
+
+.boop .bullet-point {
+  background-color: var(--boop-color);
+}
+
+.recruitment-sections {
+  background: linear-gradient(white, #F7F7F7);
+  padding-bottom: 100px;
+}
+
+.alliance-area {
+    grid-column: span 12;
+}
+
+
+.alliances {
+  height: 385px;
+  background-color: lightgrey;
+  grid-column: span 4;
+}
+
+
+
+.overlay-container {
+  width: 100%;
+  position: relative;
+}
+
+.twelve-column-grid-overlay {  /* displays the overlay container on top of everything */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000000px;
+  background: transparent;
+  padding: 0;
+  display: none;
+  z-index: 50;
+}
+
+.overlay-container > .twelve-column-grid-overlay {
+  background: transparent;
+}
+
+.twelve-column-grid-overlay p {
+  border: 1px solid white;
+  background: black;
+  margin: 0;
+  opacity: 0.2;
+}
+
+.member-image {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  background-size: auto 100%;
+  background-position: center;
+  overflow: hidden;
+  background-repeat; none;
+  filter: saturate(125%);
+}
+
+.member-image.flora {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Flora");
+}
+
+.member-image.tina {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=xTina");
+}
+
+.member-image.yiizuz {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=MaybeYiizuz");
+}
+
+.member-image.lustless {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Lustless");
+}
+
+.member-image.will {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=thiefwill");
+}
+
+.member-image.Gamecube945 {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Gamecube945");
+}
+
+.member-image.convex {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Convex");
+}
+
+.member-image.TaeBon {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=TaeBon");
+}
+
+.member-image.Luscious {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Luscious");
+}
+
+.member-image.ddemonicc {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=DDemonScythe");
+}
+
+.member-image.tweetie {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=Tweetie");
+}
+
+.member-image.ohviviho {
+  background-image: url("https://maplelegends.com/avatar/create.php?name=ohviviho");
+}
+
+.member-card {
+  grid-column: span 3;
+}
+
+.member-card p {
+  text-align: center;
+}
+
+.member-card .quote {
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.member-card h3 {
+  text-align: center;
+  margin-bottom: 0px;
+  color: var(--boop-color);
+}
+
+.member-card.balut h3 {
+  color: var(--booper-color);
+}
+
+.member-card.tweetie h3 {
+  color: var(--booper-color);
+}
+
+.member-card.ddemonicc h3 {
+  color: var(--booper-color);
+}
+
+.footer {
+  background-color: #DBF3FF;
+  height: 500px;
+  background-repeat: repeat;
+  background-image: url("http://i68.tinypic.com/25iq5h1.png");
+}
+
+.footer-card-area {
+  background-color: var(--boop-color);
+  margin: auto 0;
+  border-radius: 10px;
+  padding: 50px;
+  grid-column: 4 / span 6;
+}
+
+.footer-content {
+  align-self: center;
+}
+
+.footer-card-area h1 {
+  color: white;
+  text-align: center;
+}
+
+.footer-card-area p {
+  color: white;
+  text-align: center;
+}
+
+.footer-content button {
+  background-color: white;
+  text-align: center;
+  color: var(--boop-color);
+  border-radius: 27px;
+  width: 200px;
+  height: 54px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+
+.footer-area {
+  height: 500px;
+}
+
+.end-footer-color {
+  height: 35px;
+}
+
+.end-footer-color.boop {
+  background-color: var(--boop-color);
+}
+
+.end-footer-color.booper {
+  background-color: var(--booper-color);
+}
+
+.end-footer-color.boopest {
+  background-color: #C68BFF;
+}
+
+.services-sections button {
+  border: 1px solid var(--booper-color);
+  border-radius: 50px;
+  color: var(--booper-color);
+  font-size: 16px;
+  font-family: 'Source Sans Pro';
+  width: 180px;
+  height: 45px;
+  margin-top: 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.services-sections a {
+  color: var(--booper-color);
+}
+
+.services-sections button:hover {
+  background-color: var(--booper-color);
+  transition: .35s;
+}
+
+.services-sections button:hover a{
+  color: white;
+  transition: .35s;
+}
+
+.label {
+  background-color: var(--booper-color);
+  border-radius: 2.5px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: white;
+  margin-right: 5px;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content;
+}
+
+.scroll-card {
+  grid-column: span 3;
+  border-radius: 10px;
+  height: 444px;
+  text-align: center;
+  grid-template-rows: 112px 3px 1fr;
+  display: grid;
+  transition: 0.2s;
+  position: relative;
+}
+
+.scroll-card > a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.scroll-card h1 {
+  margin-top: 56px;
+  color: var(--body-text-color);
+}
+
+.ten-percent {
+  border: 2px solid #FFE5A3;
+  background-color: #FFF2CC;
+}
+
+.thirty-percent {
+  border: 2px solid #B8ACD4;
+  background-color: #D9D2E9;
+}
+
+.sixty-percent {
+  border: 2px solid #F9CDA4;
+  background-color: #FCE5CD;
+}
+
+.hundred-percent {
+  border: 2px solid #A8C8E7;
+  background-color: #CFE2F3;
+}
+
+.scroll-divider-line {
+  width: auto;
+  margin: auto 20px;
+  height: 3px;
+  background-color: #D6D6D6;
+  mix-blend-mode: multiply;
+}
+
+.excel-tables {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(6,1fr);
+  grid-auto-columns: 50%;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  width: auto;
+  margin: 20px;
+}
+
+.excel-tables.ten > p {
+  background-color: #FFE5A3;
+}
+
+.excel-tables.thirty > p {
+  background-color: #B8ACD4;
+}
+
+.excel-tables.sixty > p {
+  background-color: #F9CDA4;
+}
+
+.excel-tables.hundred > p {
+  background-color: #A8C8E7;
+}
+
+.scroll-card > .scroll-image {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin-top: -40px;
+  transition: 0.2s;
+}
+
+.scroll-card:hover > .scroll-image {
+  opacity: 1;
+}
+
+.scroll-card:hover {
+  margin-top: -10px;
+}
+
+.scroll-card.ten-percent:hover {
+  box-shadow: 0 20px 50px 0 #E4C978;
+}
+
+.scroll-card.thirty-percent:hover {
+  box-shadow: 0 20px 50px 0 #9D8EC0;
+}
+
+.scroll-card.sixty-percent:hover {
+  box-shadow: 0 20px 50px 0 #D3AA84;
+}
+
+.scroll-card.hundred-percent:hover {
+  box-shadow: 0 20px 50px 0 #6E93B7;
+}
+
+
+
+/* If the screen size is less than 308 and more than 300px, set stuff to whatever I said */
+
+
+@media only screen and (min-width: 308px) and (max-width: 872px), only screen and (max-width: 360px) {
+
+  .twelve-column-grid { /* makes something have a 12 column grid */
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-column-gap: 20px;
+      max-width: 872px;
+      margin: 0 auto;
+  }
+  .nav-bubble{
+     margin-top: 90px !important;
+  }
+  .new-section-intro,
+  .member-card,
+  .about-us-image,
+  .about-us-text,
+  .our-mission-text,
+  .our-mission-image,
+  .footer-card-area,
+  .bossing-gif,
+  .nav-bubble,
+  .bossing-prices,
+  .guilds.twelve-column-grid,
+  .requirements-boxes-container,
+  .requirements-boxes,
+  .requirements-line,
+  .alliances {
+    grid-column: 1/5;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .about-us-image, .our-mission-image {
+    height: 300px;
+    background-size: 100% auto;
+  }
+
+  .our-mission-text {
+    grid-row: 2;
+  }
+
+  .our-mission-text, .about-us-text {
+    margin-top: 20px;
+  }
+
+  .member-card-section-2,
+  .twelve-column-grid-overlay,
+  .scroll-card.thirty-percent,
+  .scroll-card.sixty-percent,
+  .scroll-card.hundred-percent {
+    display: none;
+  }
+
+  .scrollguide-cards.twelve-column-grid {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .scroll-card > .scroll-image {
+    opacity: 1;
+  }
+
+  .scroll-card:hover {
+    margin-top: 0px;
+  }
+
+  .scroll-card.ten-percent {
+    box-shadow: 0 20px 50px 0 #E4C978;
+  }
+
+  .scroll-card.ten-percent {
+    width: 285px;
+  }
+
+  .member-card-section .member-card {
+    margin-bottom: 16px;
+  }
+
+  .master-container > .sections {
+    display: grid;
+    grid-row-gap: 80px;
+  }
+
+  .bossing-prices * {
+    text-align: center;
+  }
+
+  .bossing-prices .prices {
+    margin: 0 auto 13px auto;
+  }
+
+  .bossing-gif {
+    margin: auto auto;
+  }
+
+  .nav-bubble {
+    border-radius: 100px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .nav-bubble-text {
+    line-height: 50px;
+    font-size: 40px;
+    margin: 20px 15px;
+  }
+
+  .sections > .introduction-sections {
+    display: grid;
+    grid-row-gap: 80px;
+  }
+
+  .guilds.twelve-column-grid, .requirements-boxes-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 20px;
+    max-width: 872px;
+    margin: 0 auto;
+  }
+
+  .berry-icon {
+    grid-column: 1/2;
+    margin-left: 16px;
+  }
+
+  .recruitment-text {
+    grid-column: 2/5;
+    margin-right: 16px;
+  }
+
+  .alliances {
+    margin-bottom: 40px;
+  }
+}
+
+/* If the screen size is 478px or less, set stuff to whatever I said */
+@media only screen and (max-width: 478px) {
+  .about-us-image, .our-mission-image {
+    height: 300px;
+    background-size: auto 100%;
+  }
+}
+
+/* If the screen size is 360px or less, set stuff to whatever I said */
+@media only screen and (max-width: 360px) {
+  .sections > .services-sections > .services-section-components {
+  display: grid;
+  grid-row-gap: 90px !important;
+  }
+  .bossing-prices .prices {
+     width: auto;
+  }
+
+  .bossing-gif.horntail img {
+    margin-left: 0px;
+  }
+}
+
+/* If the screen size is 475px or less, set stuff to whatever I said */
+@media only screen and (max-width: 475px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-bar > button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

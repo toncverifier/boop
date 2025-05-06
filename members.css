@@ -1,0 +1,744 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+:root {
+  --boop-color: #70CBFA;
+  --booper-color: #FF7BA5;
+  --body-text-color: #4A4A4A;
+}
+
+.booper-color {
+  color: var(--booper-color);
+}
+
+p {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: regular;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+
+h1 {
+  color: var(--boop-color);
+  font-size: 36px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+h2 {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 3px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: Bold;
+  margin-top: 0px;
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+
+b {
+  color: var(--body-text-color);
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 24px;
+}
+
+.master-container {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto, auto);
+  width: 100%;
+}
+.master-container > .header {
+  display: grid;
+  text-align: center;
+}
+.master-container > .sections {
+  display: grid;
+  grid-row-gap: 160px;
+}
+
+/*.sections > div {
+  background-color: lightgreen; /* TEMPORARY TO HELP SEE SIZE BETTER */
+
+
+.sections > .events-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .events-sections > .events-section {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .services-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+.sections > .services-sections > .services-section-components {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
+.sections > .announcements-section-components {
+  display: grid;
+  grid-gap: 40px;
+}
+
+.sections > .guild-rules-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
+.sections > .guild-rules-sections > .guild-rules-section-components{
+  display: grid;
+  grid-row-gap: 80px;
+  margin-bottom: 80px;
+}
+
+.sections > .alliances-sections {
+  display: grid;
+  grid-row-gap: 40px;
+}
+
+.sections > .members-sections {
+  display: grid;
+  grid-row-gap: 80px;
+}
+
+.master-container > .footer {
+  display: grid;
+}
+
+.scrollguide {
+  grid-column: span 12;
+  width: 100%;
+  /**width:1350px;*/
+}
+
+.twelve-column-grid { /* makes something have a 12 column grid */
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.twelve-column-grid-overlay {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  max-width: 1200px;
+}
+
+.header {
+  align: center;
+  grid-column: span 12;
+}
+
+.header-text {
+  color: var(--boop-color);
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+}
+
+.super-grid {
+  display: grid;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.overlay-checkbox {
+  display: grid;
+}
+
+input:checked + .overlay-container > .twelve-column-grid-overlay {
+  display: grid;
+}
+
+.nav-bar > button {
+  color: var(--boop-color);
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  font-weight: bold;
+  border: 0px transparent;
+  margin-left:30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: white;
+}
+
+a:-webkit-any-link {
+    color: var(--boop-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+  color: #5DBBEC;
+}
+
+.landing-background {
+  background-color: #F4F7F8;
+  height: 600px;
+  width: 100%;
+  background-image: url("./tina-gen20.gif");
+  margin-top: 40px;
+  background-size: auto 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  margin-bottom: 160px;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(125%);
+}
+
+
+
+.home-page-components {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-row-gap: 160px;
+  width: 100%
+}
+
+
+.new-section-intro {
+  grid-column: 3/span 8;
+}
+
+.new-section-intro,
+.new-section-intro p {
+  text-align: center;
+}
+
+.introduction {
+  grid-column: span 12;
+  height: 473px;
+}
+
+
+.bossing-section {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 55px;
+}
+.bossing-gif {
+  align-self: start;
+  justify-self: end;
+  width: auto;
+  height: 200px;
+  margin-right: 0px;
+}
+
+.bossing-gif img {
+  max-height: 200px;
+  max-width: 300px;
+  transform: scaleX(-1);
+}
+
+.bossing-gif.scarlion img {
+  transform: scale(1.4);
+  height: 150px;
+}
+
+.bossing-gif.horntail img {
+  transform: scale(1.3);
+  margin-left: 50px;
+}
+
+
+.bossing-prices {
+  text-align: left;
+}
+
+.bossing-prices h1 {
+  color: #4a4a4a;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.prices {
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+  width: 320px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #FF7BA5;
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 13px;
+}
+
+.specific-prices {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 8px;
+}
+
+.specific-prices .label {
+  background-color: var(--booper-color);
+  border-radius: 2.5px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro';
+  font-weight: 600;
+  color: white;
+  margin-right: 5px;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content;
+}
+
+.bossing-prices p {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.bossing-prices b {
+  font-size: 20px;
+}
+
+.berry-icon {
+  grid-column: 2/3;
+}
+
+
+.booper .title-and-subtitle h3 {
+  color: var(--booper-color);
+  text-align: left;
+}
+
+.guilds h3 {
+  color: var(--boop-color);
+  text-align: left;
+}
+
+.requirements-text-styling {
+  font-size: 12px;
+}
+
+.requirements-container {
+  flex: initial;
+}
+
+.line-container {
+  flex: auto;
+  margin-left: 15px;
+  margin-top: 3px;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #D8D8D8;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+
+.requirements-boxes {
+  width: auto;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  grid-column: span 4;
+}
+
+.bullet-point {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  margin-right: 15px;
+  flex: none;
+  margin-right: 20px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  line-height: 62px;
+  font-family: "Source Sans Pro";
+}
+
+.requirements-container h2 {
+  margin-bottom: 5px;
+}
+
+.booper .bullet-point {
+  background-color: var(--booper-color);
+}
+
+.boop .bullet-point {
+  background-color: var(--boop-color);
+}
+
+.guild-rules-sections {
+  background: linear-gradient(white, #F7F7F7);
+
+}
+
+.alliance-area {
+    grid-column: span 12;
+}
+
+
+.alliances {
+  height: 385px;
+  width: 100%;
+  background-color: lightgrey;
+  grid-column: span 4;
+}
+
+
+
+.overlay-container {
+  width: 100%;
+  position: relative;
+}
+
+.twelve-column-grid-overlay {  /* displays the overlay container on top of everything */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000000px;
+  background: transparent;
+  padding: 0;
+  display: none;
+  z-index: 50;
+}
+
+.overlay-container > .twelve-column-grid-overlay {
+  background: transparent;
+}
+
+.twelve-column-grid-overlay p {
+  border: 1px solid white;
+  background: black;
+  margin: 0;
+  opacity: 0.2;
+}
+
+
+.footer {
+  height: 500px;
+  background: linear-gradient(rgba(255, 123, 165, 0.65),rgba(255, 123, 165, 0.65)), url("./cloud-heart.png");
+  width: 100%;
+  background-size: 100% auto;
+  background-position: center;
+  overflow: hidden;
+}
+
+.footer-card-area {
+  grid-column: 4/10;
+  background-color: var(--booper-color);
+  margin: auto 0;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+.footer-content {
+  align-self: center;
+}
+
+.footer-card-area h1 {
+  color: white;
+  text-align: center;
+}
+
+.footer-card-area p {
+  color: white;
+  text-align: center;
+}
+
+.footer-content .lit-button {
+  background-color: white;
+  text-align: center;
+  border-radius: 27px;
+  width: 200px;
+  height: 54px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  transition: all 0.5s;
+}
+
+.footer-content .lit-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.footer-content .lit-button span:after {
+  content: 'Yo';
+  color: var(--booper-color);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 35px;
+  transition: 0.5s;
+}
+
+.footer-content .lit-button:hover span {
+  padding-right: 28px;
+}
+
+.footer-content .lit-button:hover span:after {
+  opacity: 1;
+  right: 44px;
+}
+
+.footer-content a {
+  color: var(--booper-color);
+}
+
+.footer-area {
+  height: 500px;
+}
+
+.end-footer-color {
+  height: 35px;
+}
+
+.end-footer-color.boop {
+  background-color: var(--boop-color);
+}
+
+.end-footer-color.booper {
+  background-color: var(--booper-color);
+}
+
+.end-footer-color.boopest {
+  background-color: #C68BFF;
+}
+
+
+.events-and-giveaway-card {
+  grid-column: span 4;
+  display: grid;
+  grid-template-rows: 26px auto 26px;
+  grid-gap: 15px;
+  padding: 32px;
+  box-shadow: 0 3px 50px 0 rgba(224,224,224,0.5), 0 6px 19px 0 #E6E6E6;
+  border-radius: 10px;
+  height: 326px;
+}
+
+.events-and-giveaway-card h3 {
+  color: var(--body-text-color);
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.events-and-giveaway-card .date {
+  color: #B7B7B7;
+  margin-bottom: 16px;
+}
+
+.tag {
+  height: 28px;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content;
+  border-radius: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.giveaway.tag {
+  background-color: var(--boop-color);
+}
+
+.event.tag {
+  background-color: var(--booper-color);
+}
+
+.events-and-giveaway-card > .timer {
+  align: bottom;
+  color: var(--booper-color);
+}
+
+.timer {
+  font-size: 22px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.guild-rule-card {
+  grid-column: span 4
+  padding: 20px;
+}
+
+.first-announcement-line {
+  grid-column: 3/11;
+  text-align: center;
+}
+
+.announcement-timestamp {
+  padding: 0 20px;
+  background-color: white;
+  color: #9B9B9B;
+  font-family: "Source Sans Pro";
+  font-size: 14px;
+}
+
+.announcement-divider-line {
+  color: #D8D8D8;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.first-announcement-line h3 {
+  color: var(--boop-color);
+  text-align: center
+}
+
+.small-announcement-card {
+  grid-column: span 3;
+  text-align: left;
+}
+
+.small-announcement-card p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.small-announcement-card  .announcement-timestamp {
+  padding-left: 0;
+}
+
+
+/* If the screen size is 308px or less, set stuff to whatever I said */
+@media only screen and (max-width: 308px) {
+
+  .bossing-prices .prices {
+    width: auto;
+  }
+}
+
+/* If the screen size is less than 308 and more than 360px, set stuff to whatever I said */
+@media only screen and (min-width: 300px) and (max-width: 872px), only screen and (max-width: 360px) {
+
+  .twelve-column-grid { /* makes something have a 12 column grid */
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-auto-rows: minmax(100px, auto);
+
+      max-width: 800px;
+      margin: 0 auto;
+  }
+
+  .new-section-intro,
+  .footer-card-area,
+  .bossing-gif,
+  .bossing-prices,
+  .requirements-boxes-container,
+  .requirements-boxes,
+  .requirements-line,
+  .first-announcement-line,
+  .small-announcement-card,
+  .events-and-giveaway-card {
+    grid-column: 1/5;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+
+ .twelve-column-grid-overlay {
+    display: none;
+  }
+
+  .bossing-prices * {
+    text-align: center;
+  }
+
+  .bossing-prices .prices {
+    margin: 0 auto 13px auto;
+  }
+
+  .bossing-gif {
+    margin: auto auto;
+  }
+
+  .events-and-giveaway-card {
+    margin-top: 40px;
+  }
+
+  .small-announcement-card {
+    margin-top: 40px;
+  }
+
+  .master-container > .sections {
+    display: grid;
+    grid-row-gap: 120px;
+  }
+}
+
+/* If the screen size is 360px or less, set stuff to whatever I said */
+@media only screen and (max-width: 360px) {
+  .sections > .services-sections > .services-section-components {
+  display: grid;
+  grid-row-gap: 90px !important;
+  }
+  .bossing-prices .prices {
+     width: auto;
+  }
+}
+
+/* If the screen size is 475px or less, set stuff to whatever I said */
+@media only screen and (max-width: 475px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-bar > button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
